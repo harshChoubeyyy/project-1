@@ -2,15 +2,15 @@ import { useState } from "react"
 
 const app = () => {
 
-    const [boor , setboor] = useState(0)
+    const [counter , setcounter] = useState(0)
 
     const handleClick  = () => {
-      setboor((prev) => prev+1)
+      setcounter((prev) => prev+1)
     }
 
   return (
     <>
-      <button onClick={handleClick}>{boor}</button>
+      <button onClick={handleClick}>{counter}</button>
     </>
   )
 }
